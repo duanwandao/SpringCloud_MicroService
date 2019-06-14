@@ -1,0 +1,28 @@
+server:
+  port: 9527
+  
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+    
+info:
+  app.name: hdqyf-microcloud
+  company.name: blog.hdqyf.club
+  build.artifactId: microservicecloud-zuul-gateway-9527
+  build.version: 0.0.1-SNAPSHOT
+  
+zuul:
+  routes:
+    #mydept.serviceId: microservicecloud-dept # 给自己服务取一个名字
+    mydept.serviceId: microservicecloud-config-dept-client
+    mydept.path: /mydept/**
+  ignored-services: "*" # 将原服务名称忽略掉，不能通过原服务名称访问到我的服务
+  prefix: /hdqyf # 给我的服务统一加一个前缀
