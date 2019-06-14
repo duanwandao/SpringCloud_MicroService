@@ -120,7 +120,7 @@ SpringCloud：关注全局的微服务协调治理框架，将SpringBoot开发�
 
 #### 目前成熟都互联网架构（分布式+服务治理Dubbo）
 
-![目前成熟都互联网架构（分布式+服务治理Dubbo）](.\images\目前成熟的互联网架构.png)
+![目前成熟都互联网架构（分布式+服务治理Dubbo）](https://raw.githubusercontent.com/duanwandao/SpringCloud_MicroService/master/images/目前成熟的互联网架构.png)
 
 #### 对比
 
@@ -269,7 +269,7 @@ public class Provider8001_APP {
 - 两大组件：Eureka Server（提供注册服务）、 Eureka Client（JAVA客户端，负责发送心跳）
 - 系统中的其他微服务使用Eureka客户端连接到Eureka服务端维持心跳连接（即注册）。SpringCloud的其他模块可以通过Eureka Server 来发现系统中的微服务并加以调用
 
-![Eureka的架构图](.\images\Eureka的架构图.png)
+![Eureka的架构图](https://raw.githubusercontent.com/duanwandao/SpringCloud_MicroService/master/images/Eureka的架构图.png)
 
 ### Eureka服务注册中心构建
 
@@ -656,7 +656,7 @@ private static final String URL_PREFIX = "http://MICROSERVICECLOUD-DEPT/";
 
 架构示意图：
 
-![Ribbon负载均衡架构](.\images\Ribbon负载均衡架构.png)
+![Ribbon负载均衡架构](https://raw.githubusercontent.com/duanwandao/SpringCloud_MicroService/master/images/Ribbon负载均衡架构.png)
 
 ##### 实现方法
 
@@ -1150,7 +1150,7 @@ public class DashBoard9001_APP {
 - 一线：代表监控间隔中，服务被访问的频率的折线图
 - 通过观察这些就可以在大量的实例中找出故障实例和高压实例进行修复和维护。
 
-![Dashboard监控说明图](.\images\HystrixDashboard监控说明图.png)
+![Dashboard监控说明图](https://raw.githubusercontent.com/duanwandao/SpringCloud_MicroService/master/images/HystrixDashboard监控说明图.png)
 
 ## Zuul路由网关
 
@@ -1265,7 +1265,7 @@ zuul:
   4. 当配置发生变动时，服务不需要重启即可感知配置变化并应用
   5. 将配置信息以REST接口形式暴露
 
-![SpringCloud Config架构图](.\images\SpringCloud Config架构图.png)
+![SpringCloud Config架构图](https://raw.githubusercontent.com/duanwandao/SpringCloud_MicroService/master/images/SpringCloud Config架构图.png)
 
 ### SpringCloud Config服务端与Github通讯
 
